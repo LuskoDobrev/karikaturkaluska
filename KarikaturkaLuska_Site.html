@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KarikaturkaLuska</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffcd4b;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      text-align: center;
+      background: #ffd27f;
+      padding: 0.5em;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2em;
+      text-align: center;
+      background-image: linear-gradient(to right, #ffe3b3, #ffd27f);
+    }
+    .hero h2 {
+      font-size: 2em;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+      gap: 1em;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .order-form, .contact {
+      background-color: #fff3d4;
+      padding: 2em;
+      text-align: center;
+    }
+    .order-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .order-form input, .order-form textarea {
+      width: 100%;
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-family: inherit;
+    }
+    .order-form button {
+      padding: 0.7em 2em;
+      background-color: #ffcd4b;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact h3 {
+      margin-bottom: 0.5em;
+    }
+    .facebook-link {
+      margin-top: 1em;
+      display: inline-block;
+      background-color: #1877f2;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KarikaturkaLuska</h1>
+    <p>Усмивка на хартия – направи своята уникална карикатура!</p>
+  </header>
+
+  <nav>
+    <a href="#gallery">Галерия</a>
+    <a href="#order">Поръчай</a>
+    <a href="#contact">Контакт</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Ръчно нарисувани карикатури по твоя идея!</h2>
+    <p>Перфектен подарък за рожден ден, годишнина или просто за усмивка :)</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <img src="https://i.imgur.com/LfIjYzp.jpg" alt="Карикатура 1">
+    <img src="https://i.imgur.com/XUIYUNg.jpg" alt="Карикатура 2">
+    <img src="https://i.imgur.com/j2mEKcc.jpg" alt="Карикатура 3">
+  </section>
+
+  <section id="order" class="order-form">
+    <h3>Поръчай своята карикатура</h3>
+    <form>
+      <input type="text" name="name" placeholder="Име" required>
+      <input type="email" name="email" placeholder="Имейл" required>
+      <textarea name="details" rows="4" placeholder="Опиши идеята си за карикатурата..." required></textarea>
+      <input type="file" name="photo" accept="image/*">
+      <button type="submit">Изпрати заявка</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Свържи се с мен</h3>
+    <p>📞 Телефон: <strong>0882 827 455</strong></p>
+    <p>📧 Имейл: <strong>luskodobrev07@gmail.com</strong></p>
+    <a class="facebook-link" href="https://www.facebook.com/profile.php?id=100012897259112" target="_blank">Свържи се във Facebook</a>
+  </section>
+
+  <footer>
+    &copy; 2025 KarikaturkaLuska. Всички права запазени.
+  </footer>
+</body>
+</html>
